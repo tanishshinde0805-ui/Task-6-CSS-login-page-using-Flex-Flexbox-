@@ -1,0 +1,104 @@
+/* Reset some default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Make full height layout */
+body {
+    height: 100vh;
+}
+
+/* Main container using flex */
+.container {
+    display: flex;
+    height: 100vh; /* full screen height */
+}
+
+/* Left side (image part) */
+.left-section {
+    flex: 1;
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    background: linear-gradient(to bottom, #2ea4ff, #007BFF);
+}
+
+.left-section img {
+    width: 100vh;
+    height: 100vh;   /* not full, looks better */
+    
+}
+
+/* Right side (login form) */
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: white;
+    text-align: center;
+}
+
+/* Heading */
+.right-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Small text below heading */
+.right-section p {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Forgot password */
+form a {
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 15px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Button */
+button {
+    padding: 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Signup text */
+.signup-text {
+    margin-top: 15px;
+    font-size: 13px;
+}
